@@ -1,0 +1,57 @@
+[
+    {
+        "artistName": "Andy Palacio & the Garifuna Collective",
+        "title": "Watina",
+        "genre": "Garifuna Music",
+        "label": "Cumbancha",
+        "producer": "Ivan Duran",
+        "year": "2017",
+        "tracks": ["Watina", "Weyu Larigi Weyu", "Miami", "Baba", "Lidan Aban", "Gaganbadiba", "Beiba", "Sin Precio",
+            "Yagane", "Aguyuha Niduhenu", "Ayo Da", "Amuyengu"]
+            
+    },
+    {
+        "artistName": "Umalali",
+        "title": "Umalali: The Garifuna Women's Project",
+        "genre": "Garifuna Music",
+        "label": "Cumbancha",
+        "producer": "Unknown",
+        "year": "2015",
+        "tracks": ["Intro", "Garifuna Nuguya", "Numadagu (feat. Jobo)", "Wurian (feat. Sheldon Petillo)", 
+            "Hiruga", "Waguchili", "Bibagari", 
+            "Hayanuhaya (feat. Luvlace)", "Irahuyu (feat. Aziatic & J. Lewis)" ]
+    },
+    {
+        "artistName": "Clayton Williams",
+        "title": "Garifuna Nuguya",
+        "genre": "Garifuna Music",
+        "label": "Garifuna Afro-Latino Entertainment LLC",
+        "producer": "Ivan Duran",
+        "year": "2017",
+        "tracks": ["Watina", "Weyu Larigi Weyu", "Miami", "Baba", "Lidan Aban", "Gaganbadiba", "Beiba", "Sin Precio",
+            "Yagane", "Aguyuha Niduhenu", "Ayo Da", "Amuyengu"]
+            
+    },
+    {
+        "artistName": "Chico Ramos",
+        "title": "The King of Punta - Garifuna Celebration",
+        "genre": "Garifuna Music",
+        "label": "Garifuna Afro-Latino Entertainment LLC",
+        "producer": "Unknown",
+        "year": "1999",
+        "tracks": ["Watina", "Weyu Larigi Weyu", "Miami", "Baba", "Lidan Aban", "Gaganbadiba", "Beiba", "Sin Precio",
+            "Yagane", "Aguyuha Niduhenu", "Ayo Da", "Amuyengu"]
+            
+    },
+    {
+        "artistName": "Chico Ramos",
+        "title": "The King of Punta - Garifuna Celebration",
+        "genre": "Garifuna Music",
+        "label": "Garifuna Afro-Latino Entertainment LLC",
+        "producer": "Unknown",
+        "year": "1999",
+        "tracks": ["Sopa de Caracol", "I Wonnna Marry Her", "Sound City Twisters", "Karate Punta", "Balumy Shower", "Degehenilagy", "Para Lord Ho Lord", 
+            "Busien Niguahre", "Arumagu Ifi Punta", "Punta Rockers", "Du Ma Dadode", "Punta Dinghihie", "Punta Ale Ghiu", "Afro Punta Drums Chi Ba Chi Chi Bu"]
+            
+    }
+]
