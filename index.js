@@ -5,7 +5,7 @@ const Music = require("./models/music")
 const parser = require("body-parser");
 const { request, response } = require("express");
 
-Routeranto.use(cors());
+Router.use(cors());
 Router.use(parser.json());
 
 Router.get("/", (request, response) => {
