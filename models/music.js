@@ -7,7 +7,8 @@ const musicSchema = new mongoose.Schema({
   label: String,
   producer: String,
   year: String,
-  tracks: [String]
+  tracks: [String],
+  artwork: String
 });
 
 module.exports = mongoose.model("Music", musicSchema)

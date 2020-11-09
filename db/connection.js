@@ -7,8 +7,6 @@ if (process.env.NODE_ENV === "production") {
   mongoURI = "mongodb://localhost/music";
 }
 
-
 mongoose.connect(mongoURI, { useNewUrlParser: true });
 
 module.exports = mongoose;
-
