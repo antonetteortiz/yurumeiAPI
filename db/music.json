@@ -80,8 +80,10 @@
         "tracks": ["Milagrosa (Miraculous)", "Eli Eli (arr. for jazz band): Came badugey (Why did you betray me)", 
             "Mitch", "Brown-skinned girl", "Sida (Aids)", "Madulun (Sailor)", "Tamidou muna to (Go to the center of the house)", "Agavaraha (Running through Ceiba town)",
             "Habuti horu (Madame of the prostitutes)", "Nanigie (My heart)", "Monkey song", "Uyanule (Song to my neighbourhood)", "Tagarigu nanigi (Pain of my heart)",
-            "Luweyuri waguyo (The day of our return)"]
-        },
+            "Luweyuri waguyo (The day of our return)"],
+        "artwork": "https://m.media-amazon.com/images/I/71kn7lwdrDL._SS500_.jpg"
+        }
+        
      {
         "artistName": "Various Artist",
         "title": "The Garifuna Paranda Sound of New York",
@@ -91,8 +93,7 @@
         "year": "2016",
         "tracks": ["Niri", "Awarouda", "Iseri Uganu", "Liwie Uma", "Aba Saminon", "Pachamama", "Nurunian", 
             "Beluba Nibari", "Pobre Musico", "Lidañein Were", "Tigahun Mama", "Garinagu Wagia", "Buweyuri", "Hisientibu Nu"],
-        "artwork": "https://m.media-amazon.com/images/I/71kn7lwdrDL._SS500_.jpg"
-            
+        "artwork": "https://m.media-amazon.com/images/I/712Gm+SNzJL._SS500_.jpg"
     },
      {
         "artistName": "Garifuna Kids",
