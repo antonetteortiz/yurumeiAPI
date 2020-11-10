@@ -14,7 +14,7 @@ Router.get("/", (request, response) => {
 });
 
 Router.get("/Music/:artistName", (request, response) => {
-  Music.find({ artistName: decodeURI(request.params.artistName) }).then(
+  Music.findOne({ artistName: decodeURI(request.params.artistName) }).then(
     (Music) => {
       console.log(decodeURI(request.params.artistName));
       response.json(Music);
