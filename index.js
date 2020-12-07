@@ -4,6 +4,7 @@ const Router = express();
 const Music = require("./models/music");
 const parser = require("body-parser");
 const { request, response } = require("express");
+const Recipe = require("./models/recipe")
 
 Router.use(cors());
 Router.use(parser.json());
@@ -49,6 +50,54 @@ Router.delete("/Music/:artist", (request, response) => {
     response.json(Music);
   });
 });
+
+
+// 
+// 
+// 
+
+Router.get("/", (request, response) => {
+  console.log("yerr");
+  response.redirect("/Recipe");
+});
+
+Router.get("/Recipe/:recipeName", (request, response) => {
+  Recipe.findOne({ recipeName: decodeURI(request.params.recipeName) }).then(
+    (Recipe) => {
+      console.log(decodeURI(request.params.recipeName));
+      response.json(Recipe);
+    }
+  );
+});
+
+Router.get("/Recipe", (request, response) => {
+  Recipe.find({}).then((Recipe) => {
+    response.json(Recipe);
+  });
+});
+
+Router.post("/Recipe", (request, response) => {
+  Recipe.create(request.body).then((Recipe) => {
+    response.json(Recipe);
+  });
+});
+
+Router.put("/Recipe/:name", (request, response) => {
+  Recipe.findOneAndUpdate(
+    { recipeName: decodeURI(request.params.name) },
+    request.body,
+    { new: true }
+  ).then((Recipe) => response.json(Recipe));
+});
+
+Router.delete("/Recipe/:name", (request, response) => {
+  Recipe.findOneAndDelete({
+    recipeName: decodeURI(request.params.recipe),
+  }).then((Recipe) => {
+    response.json(Recipe);
+  });
+});
+
 
 
 
