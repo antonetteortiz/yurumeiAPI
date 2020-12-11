@@ -61,7 +61,7 @@ Router.get("/", (request, response) => {
   response.redirect("/Recipe");
 });
 
-Router.get("/Recipe/:recipeName", (request, response) => {
+Router.get("/Recipe/:name", (request, response) => {
   Recipe.findOne({ recipeName: decodeURI(request.params.recipeName) }).then(
     (Recipe) => {
       console.log(decodeURI(request.params.recipeName));
