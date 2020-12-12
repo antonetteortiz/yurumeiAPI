@@ -1,6 +1,6 @@
 [
    {
-    "name": "Hudut",
+    "recipeName": "Hudut",
     "description": "Hudut is a very common traditional meal. Hudut consists of fish cooked in a coconut broth (called sere) and served with mashed plantains or yams.",
     "photo": "https://www.seriouseats.com/2020/06/20200610-garifuna-cuisine-hudutu-dish-wes-milton-guity.jpg",
     "servings": "5 servings",
@@ -35,7 +35,7 @@
     "author": "Belizean Dreams"
    },
    {
-       "name": "Garifuna Style Seafood Soup (Iraü Lau Juyeirugu)",
+       "recipeName": "Garifuna Style Seafood Soup (Iraü Lau Juyeirugu)",
        "description": "Fresh basil, oregano, and sage lend their fragrance to this hearty soup, loaded with five different types of seafood.",
        "photo": "https://www.saveur.com/resizer/3RKdROLMQKo1gCGdmGAllpokTbA=/1034x776/arc-anglerfish-arc2-prod-bonnier.s3.amazonaws.com/public/KEMUZYJAQBAYB6UE2A2FAVH4XY.jpg",
        "servings": "8 servings",
@@ -70,7 +70,7 @@
        "author": "Joseph De Leo"
    },
     {
-       "name": "Rice and Beans with Coconut Milk (Resanbinsi)",
+       "recipeName": "Rice and Beans with Coconut Milk (Resanbinsi)",
        "description": "Coconut milk is an essential ingredient in many Garifuna dishes, including this creamy take on rice and beans.",
        "photo": "https://www.saveur.com/resizer/7HcMAXXQM3-9_OHeV8IvQDeCuyI=/750x750/arc-anglerfish-arc2-prod-bonnier.s3.amazonaws.com/public/Z6N34HNIJMDY4KUXAEH7LIIACE.jpg",
        "servings": "8 - 10 servings",
@@ -101,7 +101,7 @@
     
    },
    {
-       "name": "Darasa (Green Banana Tamales)",
+       "recipeName": "Darasa (Green Banana Tamales)",
        "description": "These banana tamales are a traditional Garifuna snack.",
        "photo": "https://www.saveur.com/resizer/CnIPJ8Hl82B44OxrgwTLCPmmhMw=/750x750/arc-anglerfish-arc2-prod-bonnier.s3.amazonaws.com/public/BDL56OAZK6CIFB64HJKZ6Q2EZ4.jpg",
        "servings": "6 servings",
@@ -126,7 +126,7 @@
     
    },
    {
-       "name": "Ariran Guisou (Chicken Stew)",
+       "recipeName": "Ariran Guisou (Chicken Stew)",
        "description": "Spicy-sweet chicken stew gets a touch of tartness from fresh lime.",
        "photo": "https://www.saveur.com/resizer/ok8F9kCNQXe8mmkZNrtV3owepyc=/750x750/arc-anglerfish-arc2-prod-bonnier.s3.amazonaws.com/public/HADQ2XJIKC7OFD2YZUMXCPGTLQ.jpg",
        "servings": "4 servings",
@@ -159,7 +159,7 @@
     
    },
    {
-       "name": "Bundiga",
+       "recipeName": "Bundiga",
        "description": "Bundiga is a fish soup made with fresh seasonal fish, coconut milk, green bananas and okra. This dish can be served alone or with cassava bread or coconut white rice.",
        "photo": "https://cdn.vox-cdn.com/thumbor/HrXojxGdTi9ljfGx3XBZW-dsQQA=/1400x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/20036244/2020_06_08_SarabaTruck_005.jpg",
        "servings": "5 servings",
@@ -189,7 +189,7 @@
        "author": "Grace Kennedy Products"
    }, 
    {
-       "name": "Gungude (Garifuna Porridge)",
+       "recipeName": "Gungude (Garifuna Porridge)",
        "description": "Gungude is a sweeet and delicious porridge, made with green plantain, condensed and coconut milk.",
        "photo": "https://www.gracekennedybelize.com/wp-content/uploads/2019/04/Gungude-Garifuna-Porridge.jpg",
        "servings": "6 servings",
@@ -216,7 +216,7 @@
        "author": "Grace Kennedy Products"
    },
     {
-       "name": "Sahou",
+       "recipeName": "Sahou",
        "description": "Sahou cassava drink is usually served as a thick, warm drink.  Sometimes it is made with condensed milk or lots of sugar is added.  It is often drunk on chilly mornings to help warm you up.",
        "photo": "https://i.pinimg.com/originals/4b/0c/2c/4b0c2cec3ef530ceb8294ff38b3950d1.jpg",
        "servings": "8 servings",
@@ -239,7 +239,7 @@
        "author": "Grace Kennedy Products"
    },
     {
-       "name": "Sere",
+       "recipeName": "Sere",
        "description": "One of the most popular Garifuna dishes – sere is made up of green-ripened plantains boiled, mashed, and served with a fish broth made of coconut milk, boiled okra, garlic, habaneros, and fresh herbs.",
        "photo": "https://caribbeanlifestyle.com/wp-content/uploads/2019/10/SERE1.jpg",
        "servings": "",
@@ -267,7 +267,7 @@
        "author": "Chef Sean Kuylen"
    },
     {
-       "name": "Cassava Pudding",
+       "recipeName": "Cassava Pudding",
        "description": "Cassava Pudding, This is more of a savory cake than pudding.  It’s made with grated cassava combined with coconut milk and other tasty ingredients. It is very starchy so is makes this pudding gelatinous and sticky, but very tasty.",
        "photo": "https://i1.wp.com/therecipeisland.blog/wp-content/uploads/2017/07/YucaCake3.jpg?w=650&ssl=1",
        "servings": "8 servings",

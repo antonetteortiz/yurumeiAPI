@@ -1,7 +1,7 @@
 const mongoose = require("../db/connection");
 
 const recipeSchema = new mongoose.Schema({
-  name: String,
+  recipeName: String,
   description: String,
   photo: String,
   servings: String,
