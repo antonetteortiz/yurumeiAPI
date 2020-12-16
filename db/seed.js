@@ -4,7 +4,7 @@ const MusicData = require("./music.json");
 const Recipe = require("../models/recipe");
 const RecipeData = require("./recipe.json")
 
-const Heroes = require("../models/heros");
+const Heroes = require("../models/heroes");
 const HeroesData = require("./heroes.json")
 
 Music.deleteMany({}).then(() => {
