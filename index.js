@@ -5,12 +5,15 @@ const Music = require("./models/music");
 const parser = require("body-parser");
 const { request, response } = require("express");
 const Recipe = require("./models/recipe")
+const Heroes = require("./models/heroes")
 
 Router.use(cors());
 Router.use(parser.json());
 
+
+// Music
 Router.get("/", (request, response) => {
-  console.log("yerr");
+  // console.log("yerr");
   response.redirect("/Music");
 });
 
@@ -54,17 +57,17 @@ Router.delete("/Music/:artist", (request, response) => {
 
 // 
 // 
-// 
+// Recipe
 
 Router.get("/", (request, response) => {
-  console.log("yerr");
+  // console.log("yerr");
   response.redirect("/Recipe");
 });
 
 Router.get("/Recipe/:name", (request, response) => {
   Recipe.findOne({ recipeName: decodeURI(request.params.recipeName) }).then(
     (Recipe) => {
-      console.log(decodeURI(request.params.recipeName));
+      // console.log(decodeURI(request.params.recipeName));
       response.json(Recipe);
     }
   );
@@ -95,6 +98,51 @@ Router.delete("/Recipe/:name", (request, response) => {
     recipeName: decodeURI(request.params.recipe),
   }).then((Recipe) => {
     response.json(Recipe);
+  });
+});
+
+
+// Heroes
+
+Router.get("/", (request, response) => {
+  // console.log("yerr");
+  response.redirect("/heroes");
+});
+
+Router.get("/heroes/:name", (request, response) => {
+  Heroes.findOne({ heroName: decodeURI(request.params.heroName) }).then(
+    (Heroes) => {
+      // console.log(decodeURI(request.params.heroName));
+      response.json(Heroes);
+    }
+  );
+});
+
+Router.get("/heroes", (request, response) => {
+  Heroes.find({}).then((Heroes) => {
+    response.json(Heroes);
+  });
+});
+
+Router.post("/heroes", (request, response) => {
+  Heroes.create(request.body).then((Heroes) => {
+    response.json(Heroes);
+  });
+});
+
+Router.put("/heroes/:name", (request, response) => {
+  Heroes.findOneAndUpdate(
+    { heroName: decodeURI(request.params.name) },
+    request.body,
+    { new: true }
+  ).then((Heroes) => response.json(Heroes));
+});
+
+Router.delete("/heroes/:name", (request, response) => {
+  Heroes.findOneAndDelete({
+    heroName: decodeURI(request.params.hero),
+  }).then((Hero) => {
+    response.json(Hero);
   });
 });
 
