@@ -1,15 +1,62 @@
 const express = require("express");
 const cors = require("cors");
 const Router = express();
-const Music = require("./models/music");
 const parser = require("body-parser");
+const postmark = require("postmark");
 const { request, response } = require("express");
-const Recipe = require("./models/recipe")
-const Heroes = require("./models/heroes")
+const dotenv = require("dotenv");
+const ContactForm = require("./models/contactForm");
+const Music = require("./models/music");
+const Recipe = require("./models/recipe");
+const Heroes = require("./models/heroes");
 
+dotenv.config();
 Router.use(cors());
 Router.use(parser.json());
 
+
+Router.get("/", (request, response) => {
+  // console.log("yerr");
+  response.redirect("/");
+});
+
+//Contact Form
+Router.post("/contact", (req, res) => {
+  console.log(req.body);
+  
+  try {
+    const postmarkClient = new postmark.ServerClient(process.env.postmark);
+    const mailOptions = {
+      From: "annie@thelazycompany.com", // sender address
+      To: process.env.email, // list of receivers
+      Subject: req.body.subject, // Subject line
+      HTMLBody: "<p>Messgae from Yurumei</p>",
+      TextBody:
+        " <h3> New Inquiry From Yurumei </h3> <ul> <li>Name: ${req.body.name}</li> <li>Email: ${req.body.emailAddress}</li> <li>Subject: ${req.body.subject}</li> <li>Message: ${req.body.message}</li> </ul>",
+    };
+
+    return postmarkClient.sendEmail(mailOptions, function (err, info) {
+      if (err) {
+        console.log(err);
+        return res.status(500).send({
+          success: false,
+          message: "Something went wrong, please try again!",
+        });
+      } else {
+        return res.send({
+          success: true,
+          message: "Thanks for contacting us, we will get back to you shortly!",
+        });
+      }
+    });
+  } catch (error) {
+    console.log(error);
+    return res.status(500).send({
+      success: false,
+      message: "Something went wrong, please try again!",
+    });
+  }
+});
 
 // Music
 Router.get("/", (request, response) => {
@@ -54,9 +101,8 @@ Router.delete("/Music/:artist", (request, response) => {
   });
 });
 
-
-// 
-// 
+//
+//
 // Recipe
 
 Router.get("/", (request, response) => {
@@ -101,7 +147,6 @@ Router.delete("/Recipe/:name", (request, response) => {
   });
 });
 
-
 // Heroes
 
 Router.get("/", (request, response) => {
@@ -145,9 +190,6 @@ Router.delete("/heroes/:name", (request, response) => {
     response.json(Hero);
   });
 });
-
-
-
 
 Router.set("port", process.env.PORT || 8080);
 
