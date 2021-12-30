@@ -61,11 +61,6 @@ Router.post("/contact", (req, res) => {
 });
 
 // Music
-Router.get("/", (request, response) => {
-  // console.log("yerr");
-  response.redirect("/Music");
-});
-
 Router.get("/Music/:artistName", (request, response) => {
   Music.findOne({ artistName: decodeURI(request.params.artistName) }).then(
     (Music) => {
@@ -107,10 +102,6 @@ Router.delete("/Music/:artist", (request, response) => {
 //
 // Recipe
 
-Router.get("/", (request, response) => {
-  // console.log("yerr");
-  response.redirect("/Recipe");
-});
 
 Router.get("/Recipe/:name", (request, response) => {
   Recipe.findOne({ recipeName: decodeURI(request.params.recipeName) }).then(
@@ -150,12 +141,6 @@ Router.delete("/Recipe/:name", (request, response) => {
 });
 
 // Heroes
-
-Router.get("/", (request, response) => {
-  // console.log("yerr");
-  response.redirect("/heroes");
-});
-
 Router.get("/heroes/:name", (request, response) => {
   Heroes.findOne({ heroName: decodeURI(request.params.heroName) }).then(
     (Heroes) => {
