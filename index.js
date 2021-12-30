@@ -25,7 +25,9 @@ Router.post("/contact", (req, res) => {
   console.log(req.body);
   
   try {
+    // console.log(process.env.postmark);
     const postmarkClient = new postmark.ServerClient(process.env.postmark);
+    
     const mailOptions = {
       From: "annie@thelazycompany.com", // sender address
       To: process.env.email, // list of receivers
