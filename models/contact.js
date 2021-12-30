@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const ContactFormSchema = new Schema({
+const ContactSchema = new Schema({
   name: String,
   emailAddress: String,
   subject: String,
@@ -9,5 +9,5 @@ const ContactFormSchema = new Schema({
   createdAt: Date,
 });
 
-const ContactForm = mongoose.model("ContactForm", ContactFormSchema);
-module.exports = ContactForm;
+const Contact = mongoose.model("Contact", ContactSchema);
+module.exports = Contact;
