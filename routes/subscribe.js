@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const postmark = require("postmark");
-// const ContactForm = require("../models/contactForm");
 const dotenv = require("dotenv");
 
 dotenv.config();
@@ -15,8 +14,8 @@ router.post("/", (req, res) => {
     const mailOptions = {
       From: "annie@thelazycompany.com", // sender address
       To: process.env.email, // list of receivers
-      Subject: req.body.subject, // Subject line
-      HTMLBody: "<p>Messsge from Yurumei</p>",
+      Subject: "Thank You for subscribing!", // Subject line
+      HTMLBody: "<p>Messgae from Yurumei</p>",
       TextBody:
         " <h3> New Inquiry From Yurumei </h3> <ul> <li>Name: ${req.body.name}</li> <li>Email: ${req.body.emailAddress}</li> <li>Subject: ${req.body.subject}</li> <li>Message: ${req.body.message}</li> </ul>",
     };
@@ -31,7 +30,7 @@ router.post("/", (req, res) => {
       } else {
         return res.send({
           success: true,
-          message: "Thanks for contacting us, we will get back to you shortly!",
+          message: "Thanks for subscribing!",
         });
       }
     });
@@ -44,5 +43,4 @@ router.post("/", (req, res) => {
   }
 });
 
-
-module.exports = router
+module.exports = router;

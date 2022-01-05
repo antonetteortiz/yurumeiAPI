@@ -27,6 +27,7 @@ router.use('/contact', require('./routes/contact'))
 router.use('/heroes', require('./routes/hero'))
 router.use('/recipe', require('./routes/recipe'))
 router.use('/music', require('./routes/music'))
+router.use('/subscribe', require('./routes/subscribe'))
 
 
 router.set("port", process.env.PORT || 8080);
